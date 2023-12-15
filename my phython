@@ -1,0 +1,55 @@
+if __name__ == '__main__':
+    print("Hello, World!")
+-------------------------------------------------------
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print("%d\n%d\n%d"%(a+b,a-b,a*b))
+-----------------------------------------------------------
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+
+n=int(input())
+if n%2!=0:
+    print("Weird")
+elif(n%2==0 and 2<=n<=5):
+    print("Not Weird")
+elif(n%2==0 and 6<=n<=20):
+    print("Weird")
+elif(n%2==0 and n>20):
+    print("Not Weird")
+else:
+    print("Weird")
+------------------------------------------------------------------------------
+def is_leap(year):
+    leap = False
+    if year%4==0:
+        if year%100==0:
+            if year%400==0:
+                leap=True
+            else:
+                leap=False
+        else:
+            leap=True
+    else:
+        leap=False
+    return leap
+--------------------------------------------------------------------------------------------------
+if __name__ == '__main__':
+    n = int(input()) 
+    for i in range(n):
+        print(i+1,end="")
+-------------------------------------------------------------------------------------------------------------
+if __name__ == '__main__':
+    n = int(input())
+    for i in range(n):
+        print(i*i)
+------------------------------------------------------------------------------------
